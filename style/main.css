@@ -22,6 +22,7 @@ body{
     background: var(--black);
     color: var(--white);
     font-family: "Fira Sans", sans-serif, Arial, Helvetica;
+    /* overflow-x: hidden; */
 }
 .container{
     padding: 0 2rem;
@@ -29,7 +30,7 @@ body{
 
 /* HEADER */
 header .container{
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +64,7 @@ header nav a:hover{
     align-items: flex-start;
 }
 .main-movie .container{
-    width: max(75%, 40rem);
+    width: min(100%, 72rem);
 }
 
 .main-movie .description{
@@ -76,6 +77,9 @@ header nav a:hover{
     margin-top: 15%;
 }
 
+.btns .btn{
+    margin-right: .4rem;
+}
 .btn{
     background: var(--blackTransp);
     border: none;
@@ -86,8 +90,13 @@ header nav a:hover{
     transition: .2s ease all;
     border-radius: .8rem;
 }
-.btn:hover{
+.btn:hover, .btn:nth-child(1){
     background: var(--primary);
+    color: var(--black);
+}
+
+.btn:nth-child(1):hover{
+    background: var(--white);
     color: var(--black);
 }
 
@@ -101,4 +110,17 @@ header nav a:hover{
     width: 100%;
     height: 100%;
     display: block;
+}
+.box-movie .item:hover{
+    background: rgba(255,255,255,.50);
+}
+.carousel-movies{
+    margin-top: .8rem;
+}
+.box-movie:hover{
+    opacity: .80;
+    transition: .2s ease all;
+}
+.item{
+    background: var(--primary);
 }

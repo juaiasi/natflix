@@ -1,0 +1,18 @@
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    header .container h2{
+        margin-bottom: .8rem;
+    }
+
+    main{
+        text-align: center;
+    }
+    main .btn{
+        margin-bottom: .8rem;
+        width: 100%;
+        height: 6rem;
+    }
+}
