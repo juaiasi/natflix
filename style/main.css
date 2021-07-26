@@ -14,11 +14,16 @@
     box-sizing: border-box; /*garante que não ultrapasse a borda da caixa, se expremem mas não ultrapassam */
     font-size: 1.4rem;
 }
+
+/* Elementos base */
+
 body{
     background: var(--black);
     color: var(--white);
     font-family: "Fira Sans", sans-serif, Arial, Helvetica;
 }
+
+/* HEADER */
 header .container{
     width: 100vw;
     display: flex;
@@ -40,4 +45,24 @@ header nav a{
 
 header nav a:hover{
     color: var(--white);
+}
+
+/* PRINCIPAL */
+.main-movie{
+    font-size: 1.6rem;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url('/assets/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description{
+    margin-bottom: 2rem;
+}
+
+.main-movie .title{
+    font-size: 4rem;
 }
