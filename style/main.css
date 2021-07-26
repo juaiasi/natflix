@@ -1,0 +1,43 @@
+/* Definir variáveis na raíz */
+:root{
+    --primary: #cddc39;
+    --black: #1a1a1a;
+    --white: #ffffff;
+    --lightgray: #e4e4e4;
+    font-size: 62.5%;
+}
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*garante que não ultrapasse a borda da caixa, se expremem mas não ultrapassam */
+    font-size: 1.4rem;
+}
+body{
+    background: var(--black);
+    color: var(--white);
+    font-family: "Fira Sans", sans-serif, Arial, Helvetica;
+}
+header .container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+}
+
+header .logo{
+    color: var(--primary);
+    font-size: 4rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--lightgray);
+    margin-left: .8rem;
+}
+
+header nav a:hover{
+    color: var(--white);
+}
